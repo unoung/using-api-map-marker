@@ -1,0 +1,36 @@
+{
+  "stores": {
+    "Gyeongsangdo": [
+      {
+        "egName": "MONSTER PRO",
+        "koName": "몬스터 프로",
+        "address": "부산 기장군 기장읍 반룡산단 1로15",
+        "telNum": "070-4027-6819",
+        "addressLink": "https://map.naver.com/v5/entry/place/1090301545?c=14387782.6264212,4208921.1903156,15,0,0,0,dh",
+        "directionLink": "https://map.naver.com/v5/directions/-/14388715.397032265,4208921.190315587,%EB%AA%AC%EC%8A%A4%ED%84%B0%ED%94%84%EB%A1%9C,1090301545,PLACE_POI/-/car?c=14388715.3970317,4208921.1903156,15,0,0,0,dh",
+        "lat": 35.33075810000002,
+        "lng": 129.25184539999984
+      },
+      {
+        "egName": "MOTORS ONE",
+        "koName": "모터스 원",
+        "address": "대구 북구 연경동 865",
+        "telNum": "053-283-1212",
+        "addressLink": "https://map.naver.com/v5/entry/place/1076103364?c=14317612.6275085,4292412.1740716,15,0,0,0,dh",
+        "directionLink": "https://map.naver.com/v5/directions/-/14318078.41564973,4292412.174071528,%EB%AA%A8%ED%84%B0%EC%8A%A4%EC%9B%90,1076103364,PLACE_POI/-/car?c=14318078.4156492,4292412.1740715,15,0,0,0,dh",
+        "lat": 35.94031689999973,
+        "lng": 128.60474979999955
+      },
+      {
+        "egName": "KS CAMPING CAR",
+        "koName": "케이에스 캠핑카",
+        "address": "부산 강서구 낙동남로 1030-23",
+        "telNum": "0507-1428-0502",
+        "addressLink": "https://map.naver.com/v5/entry/place/1477772801?c=14351507.7760583,4179124.1116899,15,0,0,0,dh",
+        "directionLink": "https://map.naver.com/v5/directions/-/14318078.41564973,4292412.174071528,%EB%AA%A8%ED%84%B0%EC%8A%A4%EC%9B%90,1076103364,PLACE_POI/-/car?c=14318078.4156492,4292412.1740715,15,0,0,0,dh",
+        "lat": 35.11208949999994,
+        "lng": 128.92597210000005
+      }
+    ]
+  }
+}
