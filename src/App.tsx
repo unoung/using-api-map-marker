@@ -51,11 +51,19 @@ const App = () => {
         map.fitBounds(daegu.getBounds());
       });
 
+      const store = {
+        stores: {
+          Gyeongsangdo: ["hi"],
+          gyeonggido: ["hi"],
+        },
+      };
+
       // 주변 마커 나타내기
       const markers: naver.maps.Marker[] = [];
       const infowindows: naver.maps.InfoWindow[] = [];
-      stores.stores.Gyeongsangdo.map(
-        (list) => {
+
+      Object.values(stores.stores).map((city) => {
+        city.map((list) => {
           const contentTags = `<div style="padding:18px;height:150px;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);">
 										<div class="content_wrap">
 											<h1>${list.egName}</h1>
@@ -70,7 +78,6 @@ const App = () => {
 											<button onclick="location.href='${list.directionLink}'">길찾기</button>
 										<div>
 									</div>	`;
-
           const otherMarkers = new naver.maps.Marker({
             position: new naver.maps.LatLng(list.lat, list.lng),
             map,
@@ -89,11 +96,12 @@ const App = () => {
 
           markers.push(otherMarkers);
           infowindows.push(infowindow);
-        },
+        });
         naver.maps.Event.addListener(map, "idle", () => {
           updateMarkers(map, markers);
-        })
-      );
+        });
+      });
+
       const updateMarkers = (
         isMap: naver.maps.Map,
         isMarkers: naver.maps.Marker[]
